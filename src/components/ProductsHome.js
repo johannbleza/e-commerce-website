@@ -13,7 +13,7 @@ const ProductsHome = () => {
 
     const men = () => {
 
-        fetch("https://bleza-ecommerce-api.herokuapp.com/api/products/men")
+        fetch("https://ecommerce-api-johann.herokuapp.com/api/products/men")
         .then(response => response.json())
         .then(data => {
             setProductsM(data)
@@ -22,7 +22,7 @@ const ProductsHome = () => {
 
     const women = () => {
 
-        fetch("https://bleza-ecommerce-api.herokuapp.com/api/products/women")
+        fetch("https://ecommerce-api-johann.herokuapp.com/api/products/women")
         .then(response => response.json())
         .then(data => {
             setProductsW(data)
@@ -31,7 +31,7 @@ const ProductsHome = () => {
 
     const kids = () => {
 
-        fetch("https://bleza-ecommerce-api.herokuapp.com/api/products/kids")
+        fetch("https://ecommerce-api-johann.herokuapp.com/api/products/kids")
         .then(response => response.json())
         .then(data => {
             setProductsK(data)
@@ -67,7 +67,7 @@ const ProductsHome = () => {
                 </Col>
             </Row>
             <Row className='mb-4'>
-                {productsM.slice(7, 10).map((item) => (
+                {productsW.slice(2, 5).map((item) => (
                     <Product item={item} key={item._id} />
                 ))}
             </Row>

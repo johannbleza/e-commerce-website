@@ -24,7 +24,7 @@ const AdminProducts = ({item}) => {
             confirmButtonText: 'Yes',
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://bleza-ecommerce-api.herokuapp.com/api/products/${item._id}/delete`, {
+                fetch(`https://ecommerce-api-johann.herokuapp.com/api/products/${item._id}/delete`, {
                     method: "DELETE",
                     headers: {
                         "Authorization": `Bearer ${token}`,
@@ -62,7 +62,7 @@ const AdminProducts = ({item}) => {
             confirmButtonText: 'Yes',
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://bleza-ecommerce-api.herokuapp.com/api/products/${item._id}/archive`, {
+                fetch(`https://ecommerce-api-johann.herokuapp.com/api/products/${item._id}/archive`, {
                     method: "PUT",
                     headers: {
                         "Authorization": `Bearer ${token}`,
@@ -97,7 +97,7 @@ const AdminProducts = ({item}) => {
             confirmButtonText: 'Yes',
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://bleza-ecommerce-api.herokuapp.com/api/products/${item._id}/unarchive`, {
+                fetch(`https://ecommerce-api-johann.herokuapp.com/api/products/${item._id}/unarchive`, {
                     method: "PUT",
                     headers: {
                         "Authorization": `Bearer ${token}`,
@@ -142,7 +142,7 @@ const AdminProducts = ({item}) => {
             }).then((result) => {
                 if (result.isConfirmed) {
 
-                    fetch(`https://bleza-ecommerce-api.herokuapp.com/api/products/${item._id}`, {
+                    fetch(`https://ecommerce-api-johann.herokuapp.com/api/products/${item._id}`, {
                         method: "PUT",
                         headers: {
                             "Authorization": `Bearer ${token}`,

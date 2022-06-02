@@ -20,7 +20,7 @@ const AdminAllProducts = () => {
 
 
     const fetchData = () => {
-        fetch("https://bleza-ecommerce-api.herokuapp.com/api/products/all", {
+        fetch("https://ecommerce-api-johann.herokuapp.com/api/products/all", {
             headers: {
                 "Authorization": `Bearer ${token}`,
                 "Content-Type": "application/json"
@@ -64,7 +64,7 @@ const AdminAllProducts = () => {
             }).then((result) => {
                 if (result.isConfirmed) {
 
-                    fetch("https://bleza-ecommerce-api.herokuapp.com/api/products/create", {
+                    fetch("https://ecommerce-api-johann.herokuapp.com/api/products/create", {
                         method: "POST",
                         headers: {
                             "Authorization": `Bearer ${token}`,

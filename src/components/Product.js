@@ -37,7 +37,7 @@ const Product = ({item}) => {
 
 
         if (size !== "") {
-            fetch("https://bleza-ecommerce-api.herokuapp.com/api/users/addCart", {
+            fetch("https://ecommerce-api-johann.herokuapp.com/api/users/addCart", {
                 method: "POST",
                 headers: {
                     "Authorization": `Bearer ${token}`,

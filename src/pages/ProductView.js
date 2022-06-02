@@ -20,7 +20,7 @@ const ProductView = () => {
 
 
     const fetchData = () => {
-        fetch(`https://bleza-ecommerce-api.herokuapp.com/api/products/${id}`)
+        fetch(`https://ecommerce-api-johann.herokuapp.com/api/products/${id}`)
             .then(response => response.json())
             .then(data => {
                 setProducts(data)
@@ -50,7 +50,7 @@ const ProductView = () => {
     const addToCart = () => {
 
         if(size !== ""){
-            fetch("https://bleza-ecommerce-api.herokuapp.com/api/users/addCart", {
+            fetch("https://ecommerce-api-johann.herokuapp.com/api/users/addCart", {
                 method: "POST",
                 headers: {
                     "Authorization": `Bearer ${token}`,

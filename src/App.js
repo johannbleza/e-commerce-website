@@ -34,7 +34,7 @@ const App = () => {
   const [allProducts, setProducts] = useState([])
 
   const fetchData = () => {
-    fetch("https://bleza-ecommerce-api.herokuapp.com/api/products/all", {
+    fetch("https://ecommerce-api-johann.herokuapp.com/api/products/all", {
       headers: {
         "Authorization": `Bearer ${token}`,
         "Content-Type": "application/json"
@@ -69,7 +69,7 @@ const App = () => {
 
   useEffect(() => {
 
-    fetch("https://bleza-ecommerce-api.herokuapp.com/api/users/details", {
+    fetch("https://ecommerce-api-johann.herokuapp.com/api/users/details", {
       headers: {
         "Authorization": `Bearer ${token}`
       }
@@ -91,7 +91,7 @@ const App = () => {
   const [allOrders, setAllOrders] = useState([])
 
   const orderHistory = () => {
-    fetch("https://bleza-ecommerce-api.herokuapp.com/api/order/order-history", {
+    fetch("https://ecommerce-api-johann.herokuapp.com/api/order/order-history", {
       headers: {
         "Authorization": `Bearer ${token}`,
         "Content-Type": "application/json"
@@ -103,7 +103,7 @@ const App = () => {
       })
   }
   const adminAllOrders = () => {
-    fetch("https://bleza-ecommerce-api.herokuapp.com/api/order/", {
+    fetch("https://ecommerce-api-johann.herokuapp.com/api/order/", {
       headers: {
         "Authorization": `Bearer ${token}`,
         "Content-Type": "application/json"

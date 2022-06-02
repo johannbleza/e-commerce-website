@@ -11,7 +11,7 @@ const Newsletter = () => {
         
         if(email !== ""){
 
-            fetch("https://bleza-ecommerce-api.herokuapp.com/api/users/newsletter", {
+            fetch("https://ecommerce-api-johann.herokuapp.com/api/users/newsletter", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

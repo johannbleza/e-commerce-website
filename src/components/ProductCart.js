@@ -20,7 +20,7 @@ const ProductCart = ({item}) => {
             confirmButtonText: 'Yes',
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch("https://bleza-ecommerce-api.herokuapp.com/api/users/removeFromCart", {
+                fetch("https://ecommerce-api-johann.herokuapp.com/api/users/removeFromCart", {
                     method: "PUT",
                     headers: {
                         "Authorization": `Bearer ${token}`,
@@ -89,7 +89,7 @@ const ProductCart = ({item}) => {
             confirmButtonText: 'Yes',
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch("https://bleza-ecommerce-api.herokuapp.com/api/users/editFromCart", {
+                fetch("https://ecommerce-api-johann.herokuapp.com/api/users/editFromCart", {
                     method: "PUT",
                     headers: {
                         "Authorization": `Bearer ${token}`,

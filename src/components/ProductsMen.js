@@ -9,7 +9,7 @@ const ProductsMen = () => {
     const [products, setProducts] = useState([])
     
     const fetchData = () => {
-        fetch("https://bleza-ecommerce-api.herokuapp.com/api/products/men")
+        fetch("https://ecommerce-api-johann.herokuapp.com/api/products/men")
             .then(response => response.json())
             .then(data => {
                 setProducts(data)

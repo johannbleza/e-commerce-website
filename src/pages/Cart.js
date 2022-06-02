@@ -30,7 +30,7 @@ const Cart = () => {
 
     const clearCart = () =>{
 
-        fetch(`https://bleza-ecommerce-api.herokuapp.com/api/users/removeCart`, {
+        fetch(`https://ecommerce-api-johann.herokuapp.com/api/users/removeCart`, {
             method: "PUT",
             headers: {
                 "Authorization": `Bearer ${token}`,
@@ -62,7 +62,7 @@ const Cart = () => {
                 clearCart()
                 
 
-                fetch(`https://bleza-ecommerce-api.herokuapp.com/api/order/checkout`, {
+                fetch(`https://ecommerce-api-johann.herokuapp.com/api/order/checkout`, {
                     method: "POST",
                     headers: {
                         "Authorization": `Bearer ${token}`,

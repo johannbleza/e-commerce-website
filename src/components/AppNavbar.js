@@ -42,7 +42,7 @@ const AppNavbar = () => {
         e.preventDefault()
 
 
-        fetch("https://bleza-ecommerce-api.herokuapp.com/api/users/login", {
+        fetch("https://ecommerce-api-johann.herokuapp.com/api/users/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -85,7 +85,7 @@ const AppNavbar = () => {
 
     const userDetails = (token) => {
 
-        fetch("https://bleza-ecommerce-api.herokuapp.com/api/users/details", {
+        fetch("https://ecommerce-api-johann.herokuapp.com/api/users/details", {
             headers: {
                 "Authorization": `Bearer ${token}`
             }
@@ -120,7 +120,7 @@ const AppNavbar = () => {
 
 
 
-        fetch("https://bleza-ecommerce-api.herokuapp.com/api/users/register", {
+        fetch("https://ecommerce-api-johann.herokuapp.com/api/users/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
